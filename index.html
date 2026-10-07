@@ -1,1194 +1,2139 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Amora Boutique</title>
 
-<meta name="description" content="Amora Boutique - Moda feminina para você vestir sua essência.">
+<meta
+    name="description"
+    content="Amora Boutique - Moda feminina para você vestir sua essência."
+>
 
-<link rel="icon" type="image/jpeg" href="logo.jpeg">
+<link
+    rel="icon"
+    type="image/jpeg"
+    href="logo.jpeg"
+>
 
 <style>
+
+/* =========================================================
+   VARIÁVEIS
+========================================================= */
+
 :root{
+
     --rosa:#b85c7a;
     --rosa-claro:#f8e8ed;
     --rosa-hover:#9f4865;
+
     --vinho:#6e3047;
+
     --creme:#fffaf8;
+
     --branco:#ffffff;
+
     --texto:#292326;
+
     --cinza:#777176;
+
     --borda:#eadde1;
-    --sombra:0 10px 30px rgba(70,35,45,.08);
+
+    --sombra:
+        0 10px 30px rgba(70,35,45,.08);
+
 }
+
+
+/* =========================================================
+   RESET
+========================================================= */
 
 *{
+
     margin:0;
+
     padding:0;
+
     box-sizing:border-box;
+
 }
+
 
 html{
+
     scroll-behavior:smooth;
+
 }
 
+
 body{
-    font-family:Arial, Helvetica, sans-serif;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
     background:var(--creme);
+
     color:var(--texto);
+
 }
+
 
 button,
 input,
 select{
+
     font-family:inherit;
+
 }
+
 
 button{
+
     cursor:pointer;
+
 }
 
-/* =========================
+
+/* =========================================================
    TOPO
-========================= */
+========================================================= */
 
 .topbar{
+
     background:#20191c;
+
     color:#fff;
+
     text-align:center;
+
     padding:9px 15px;
+
     font-size:12px;
+
     letter-spacing:.5px;
+
 }
 
-/* =========================
+
+/* =========================================================
    HEADER
-========================= */
+========================================================= */
 
 header{
+
     position:sticky;
+
     top:0;
+
     z-index:1000;
-    background:rgba(255,250,248,.96);
-    backdrop-filter:blur(12px);
-    border-bottom:1px solid var(--borda);
+
+    background:
+        rgba(255,250,248,.96);
+
+    backdrop-filter:
+        blur(12px);
+
+    border-bottom:
+        1px solid var(--borda);
+
 }
+
 
 .nav{
+
     max-width:1250px;
+
     margin:auto;
+
     height:76px;
+
     padding:0 22px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:space-between;
+
     gap:25px;
+
 }
+
 
 .brand{
+
     display:flex;
+
     align-items:center;
+
     text-decoration:none;
+
     min-width:120px;
+
 }
+
 
 .brand img{
+
     width:88px;
+
     height:48px;
+
     object-fit:contain;
+
     display:block;
+
 }
+
 
 .menu{
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     gap:30px;
+
 }
+
 
 .menu a{
+
     color:var(--texto);
+
     text-decoration:none;
+
     font-size:14px;
+
     font-weight:600;
+
     transition:.2s;
+
 }
+
 
 .menu a:hover{
+
     color:var(--rosa);
+
 }
+
 
 .actions{
+
     display:flex;
+
     align-items:center;
+
     gap:8px;
+
 }
+
 
 .icon-btn{
+
     width:42px;
+
     height:42px;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:50%;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     font-size:18px;
+
     transition:.2s;
+
     position:relative;
+
 }
+
 
 .icon-btn:hover{
+
     border-color:var(--rosa);
+
     color:var(--rosa);
+
 }
+
 
 .cart-count{
+
     position:absolute;
+
     right:-2px;
+
     top:-3px;
+
     width:19px;
+
     height:19px;
+
     background:var(--rosa);
+
     color:#fff;
+
     border-radius:50%;
+
     font-size:10px;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     font-weight:bold;
+
 }
 
-/* =========================
+
+/* =========================================================
    HERO
-========================= */
+========================================================= */
 
 .hero{
+
     max-width:1250px;
+
     margin:auto;
-    padding:45px 22px 25px;
+
+    padding:
+        35px 22px 25px;
+
 }
+
 
 .hero-box{
-    min-height:430px;
+
+    min-height:500px;
+
     border-radius:28px;
-    background:
-        linear-gradient(120deg,rgba(255,255,255,.95),rgba(250,226,234,.88));
-    display:grid;
-    grid-template-columns:1fr 1fr;
+
     overflow:hidden;
+
+    display:grid;
+
+    grid-template-columns:
+        .9fr 1.1fr;
+
+    background:
+        linear-gradient(
+            120deg,
+            #fff,
+            #f8e5eb
+        );
+
     position:relative;
+
 }
+
 
 .hero-content{
+
     padding:65px;
+
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     position:relative;
+
     z-index:2;
+
 }
+
 
 .hero-small{
+
     color:var(--rosa);
+
     text-transform:uppercase;
+
     font-size:12px;
+
     font-weight:bold;
+
     letter-spacing:2px;
+
     margin-bottom:15px;
+
 }
+
 
 .hero h1{
+
     font-family:Georgia,serif;
-    font-size:clamp(42px,6vw,72px);
+
+    font-size:
+        clamp(42px,6vw,72px);
+
     line-height:.98;
+
     margin-bottom:22px;
+
     color:#33262b;
+
 }
+
 
 .hero p{
+
     max-width:470px;
+
     color:var(--cinza);
+
     line-height:1.7;
+
     margin-bottom:28px;
+
 }
+
 
 .btn{
+
     display:inline-flex;
+
     align-items:center;
+
     justify-content:center;
+
     border:0;
+
     border-radius:30px;
+
     padding:14px 24px;
+
     background:var(--rosa);
+
     color:#fff;
+
     font-weight:bold;
+
     text-decoration:none;
+
     transition:.2s;
+
 }
+
 
 .btn:hover{
+
     background:var(--rosa-hover);
-    transform:translateY(-1px);
+
+    transform:
+        translateY(-1px);
+
 }
+
+
+/* =========================================================
+   IMAGEM DO BANNER
+========================================================= */
 
 .hero-art{
+
     position:relative;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
+    min-height:500px;
+
     overflow:hidden;
-}
 
-.hero-circle{
-    width:330px;
-    height:330px;
-    border-radius:50%;
-    background:#fff;
-    box-shadow:var(--sombra);
     display:flex;
-    flex-direction:column;
+
     align-items:center;
+
     justify-content:center;
-    position:relative;
+
+    background:#eadde1;
+
 }
 
-.hero-circle span{
-    font-size:13px;
-    text-transform:uppercase;
-    letter-spacing:3px;
-    color:var(--rosa);
-    margin-bottom:12px;
+
+.hero-model{
+
+    width:100%;
+
+    height:100%;
+
+    min-height:500px;
+
+    object-fit:cover;
+
+    display:block;
+
 }
 
-.hero-circle strong{
-    font-family:Georgia,serif;
-    font-size:45px;
-    color:var(--vinho);
-}
 
-/* =========================
+/* =========================================================
    SEÇÕES
-========================= */
+========================================================= */
 
 .section{
+
     max-width:1250px;
+
     margin:auto;
-    padding:60px 22px;
+
+    padding:
+        60px 22px;
+
 }
+
 
 .section-title{
+
     text-align:center;
+
     margin-bottom:35px;
+
 }
+
 
 .section-title span{
+
     color:var(--rosa);
+
     text-transform:uppercase;
+
     font-size:11px;
+
     font-weight:bold;
+
     letter-spacing:2px;
+
 }
+
 
 .section-title h2{
+
     font-family:Georgia,serif;
+
     font-size:38px;
+
     margin-top:8px;
+
 }
 
-/* =========================
+
+/* =========================================================
    CATEGORIAS
-========================= */
+========================================================= */
 
 .categories{
+
     display:flex;
+
     gap:10px;
+
     flex-wrap:wrap;
+
     justify-content:center;
+
     margin-bottom:30px;
+
 }
 
+
 .category-btn{
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     color:var(--texto);
-    padding:10px 17px;
+
+    padding:
+        10px 17px;
+
     border-radius:30px;
+
     font-size:13px;
+
     transition:.2s;
+
 }
+
 
 .category-btn:hover,
 .category-btn.active{
+
     background:var(--rosa);
+
     color:#fff;
+
     border-color:var(--rosa);
+
 }
 
-/* =========================
+
+/* =========================================================
    BUSCA
-========================= */
+========================================================= */
 
 .search-box{
+
     max-width:600px;
-    margin:0 auto 30px;
+
+    margin:
+        0 auto 30px;
+
     position:relative;
+
 }
+
 
 .search-box input{
+
     width:100%;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:30px;
-    padding:15px 20px 15px 48px;
+
+    padding:
+        15px 20px 15px 48px;
+
     outline:none;
+
     font-size:14px;
+
 }
+
 
 .search-box input:focus{
+
     border-color:var(--rosa);
+
 }
+
 
 .search-icon{
+
     position:absolute;
+
     left:19px;
+
     top:50%;
-    transform:translateY(-50%);
+
+    transform:
+        translateY(-50%);
+
     color:var(--cinza);
+
 }
 
-/* =========================
+
+/* =========================================================
    PRODUTOS
-========================= */
+========================================================= */
 
 .products{
+
     display:grid;
-    grid-template-columns:repeat(4,1fr);
+
+    grid-template-columns:
+        repeat(4,1fr);
+
     gap:20px;
+
 }
+
 
 .product{
+
     background:#fff;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     border-radius:18px;
+
     overflow:hidden;
+
     position:relative;
+
     transition:.25s;
+
 }
+
 
 .product:hover{
-    transform:translateY(-4px);
+
+    transform:
+        translateY(-4px);
+
     box-shadow:var(--sombra);
+
 }
+
 
 .product-image{
+
     height:285px;
-    background:linear-gradient(145deg,#f6e7eb,#eee0e5);
+
+    background:#f5e7eb;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    font-size:65px;
+
     position:relative;
+
+    overflow:hidden;
+
 }
+
 
 .product-image img{
+
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
+    display:block;
+
 }
+
 
 .favorite{
+
     position:absolute;
+
     right:12px;
+
     top:12px;
+
     width:36px;
+
     height:36px;
+
     border:0;
+
     border-radius:50%;
-    background:rgba(255,255,255,.9);
+
+    background:
+        rgba(255,255,255,.9);
+
     font-size:19px;
+
     z-index:2;
+
 }
+
 
 .favorite.active{
+
     color:#d54b72;
+
 }
+
 
 .product-info{
+
     padding:17px;
+
 }
+
 
 .product-category{
+
     font-size:10px;
+
     text-transform:uppercase;
+
     letter-spacing:1px;
+
     color:var(--rosa);
+
     font-weight:bold;
+
 }
+
 
 .product-name{
+
     font-family:Georgia,serif;
+
     font-size:19px;
-    margin:6px 0 8px;
+
+    margin:
+        6px 0 8px;
+
 }
+
 
 .product-price{
+
     font-weight:bold;
+
     font-size:17px;
+
     margin-bottom:14px;
+
 }
+
 
 .product-btn{
+
     width:100%;
-    border:1px solid var(--rosa);
+
+    border:
+        1px solid var(--rosa);
+
     background:#fff;
+
     color:var(--rosa);
+
     border-radius:25px;
+
     padding:11px;
+
     font-weight:bold;
+
 }
+
 
 .product-btn:hover{
+
     background:var(--rosa);
+
     color:#fff;
+
 }
 
-/* =========================
-   SEM RESULTADO
-========================= */
+
+/* =========================================================
+   SEM RESULTADOS
+========================================================= */
 
 .no-results{
+
     display:none;
+
     text-align:center;
+
     padding:50px 20px;
+
     color:var(--cinza);
+
 }
 
-/* =========================
+
+/* =========================================================
    SOBRE
-========================= */
+========================================================= */
 
 .about{
+
     background:#f6e8ec;
+
 }
+
 
 .about-inner{
+
     max-width:900px;
+
     margin:auto;
+
     text-align:center;
+
 }
+
 
 .about-inner p{
+
     color:#665d61;
+
     line-height:1.8;
+
     margin-top:20px;
+
 }
 
-/* =========================
+
+/* =========================================================
    CONTATO
-========================= */
+========================================================= */
 
 .contact-grid{
+
     display:grid;
-    grid-template-columns:repeat(3,1fr);
+
+    grid-template-columns:
+        repeat(3,1fr);
+
     gap:18px;
+
 }
+
 
 .contact-card{
+
     background:#fff;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     border-radius:18px;
+
     padding:28px;
+
     text-align:center;
+
 }
+
 
 .contact-card .icon{
+
     font-size:30px;
+
     margin-bottom:12px;
+
 }
+
 
 .contact-card h3{
+
     margin-bottom:7px;
+
 }
+
 
 .contact-card p{
+
     color:var(--cinza);
+
     font-size:14px;
+
 }
 
-/* =========================
-   MODAL PRODUTO
-========================= */
+
+/* =========================================================
+   MODAL
+========================================================= */
 
 .modal-overlay{
+
     position:fixed;
+
     inset:0;
-    background:rgba(25,15,19,.62);
+
+    background:
+        rgba(25,15,19,.62);
+
     z-index:3000;
+
     display:none;
+
     align-items:center;
+
     justify-content:center;
+
     padding:20px;
+
 }
+
 
 .modal-overlay.show{
+
     display:flex;
+
 }
+
 
 .product-modal{
-    width:min(850px,100%);
+
+    width:
+        min(850px,100%);
+
     max-height:90vh;
+
     overflow:auto;
+
     background:#fff;
+
     border-radius:24px;
+
     position:relative;
+
     display:grid;
-    grid-template-columns:1fr 1fr;
+
+    grid-template-columns:
+        1fr 1fr;
+
 }
+
 
 .modal-image{
+
     min-height:450px;
-    background:linear-gradient(145deg,#f6e7eb,#eee0e5);
+
+    background:#f5e7eb;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    font-size:100px;
+
+    overflow:hidden;
+
 }
+
 
 .modal-image img{
+
     width:100%;
+
     height:100%;
+
     min-height:450px;
+
     object-fit:cover;
+
 }
+
 
 .modal-content{
+
     padding:40px;
+
 }
+
 
 .close-modal{
+
     position:absolute;
+
     right:16px;
+
     top:16px;
+
     width:38px;
+
     height:38px;
+
     border:0;
+
     background:#fff;
+
     border-radius:50%;
+
     font-size:20px;
+
     z-index:3;
+
 }
+
 
 .modal-category{
+
     color:var(--rosa);
+
     text-transform:uppercase;
+
     font-size:11px;
+
     letter-spacing:2px;
+
     font-weight:bold;
+
 }
+
 
 .modal-content h2{
+
     font-family:Georgia,serif;
+
     font-size:34px;
-    margin:10px 0;
+
+    margin:
+        10px 0;
+
 }
+
 
 .modal-price{
+
     font-size:22px;
+
     font-weight:bold;
+
     margin-bottom:22px;
+
 }
+
 
 .modal-description{
+
     color:var(--cinza);
+
     line-height:1.7;
+
     margin-bottom:22px;
+
 }
+
 
 .size-title{
+
     font-size:13px;
+
     font-weight:bold;
+
     margin-bottom:10px;
+
 }
+
 
 .sizes{
+
     display:flex;
+
     gap:8px;
+
     flex-wrap:wrap;
+
     margin-bottom:24px;
+
 }
+
 
 .size-btn{
+
     min-width:45px;
-    padding:10px 14px;
-    border:1px solid var(--borda);
+
+    padding:
+        10px 14px;
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:8px;
+
 }
+
 
 .size-btn.active{
+
     background:var(--rosa);
+
     color:#fff;
+
     border-color:var(--rosa);
+
 }
+
 
 .add-cart{
+
     width:100%;
+
     border:0;
+
     background:var(--rosa);
+
     color:#fff;
+
     border-radius:28px;
+
     padding:15px;
+
     font-weight:bold;
+
     font-size:15px;
+
 }
+
 
 .add-cart:hover{
+
     background:var(--rosa-hover);
+
 }
 
-/* =========================
+
+/* =========================================================
    CARRINHO
-========================= */
+========================================================= */
 
 .cart-overlay{
+
     position:fixed;
+
     inset:0;
-    background:rgba(0,0,0,.4);
+
+    background:
+        rgba(0,0,0,.4);
+
     z-index:4000;
+
     display:none;
+
 }
+
 
 .cart-overlay.show{
+
     display:block;
+
 }
+
 
 .cart-drawer{
+
     position:absolute;
+
     right:0;
+
     top:0;
+
     height:100%;
-    width:min(470px,100%);
+
+    width:
+        min(470px,100%);
+
     background:#fff;
+
     display:flex;
+
     flex-direction:column;
-    box-shadow:-10px 0 30px rgba(0,0,0,.15);
+
+    box-shadow:
+        -10px 0 30px rgba(0,0,0,.15);
+
 }
+
 
 .cart-header{
+
     padding:20px;
-    border-bottom:1px solid var(--borda);
+
+    border-bottom:
+        1px solid var(--borda);
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
+
 }
+
 
 .cart-header h2{
+
     font-family:Georgia,serif;
+
 }
+
 
 .close-cart{
+
     border:0;
+
     background:none;
+
     font-size:25px;
+
 }
+
 
 .cart-items{
+
     flex:1;
+
     overflow:auto;
-    padding:15px 20px;
+
+    padding:
+        15px 20px;
+
 }
+
 
 .empty-cart{
+
     text-align:center;
+
     padding:50px 20px;
+
     color:var(--cinza);
+
 }
+
 
 .cart-item{
+
     display:grid;
-    grid-template-columns:70px 1fr auto;
+
+    grid-template-columns:
+        70px 1fr auto;
+
     gap:12px;
+
     align-items:center;
+
     padding:13px 0;
-    border-bottom:1px solid #eee;
+
+    border-bottom:
+        1px solid #eee;
+
 }
+
 
 .cart-thumb{
+
     width:70px;
+
     height:75px;
+
     border-radius:10px;
+
     background:#f5e7eb;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
-    font-size:28px;
+
     overflow:hidden;
+
 }
+
 
 .cart-thumb img{
+
     width:100%;
+
     height:100%;
+
     object-fit:cover;
+
 }
+
 
 .cart-item-name{
+
     font-weight:bold;
+
     font-size:14px;
+
 }
+
 
 .cart-item-size{
+
     color:var(--cinza);
+
     font-size:12px;
+
     margin:3px 0;
+
 }
+
 
 .cart-item-price{
+
     font-size:13px;
+
 }
+
 
 .qty-controls{
+
     display:flex;
+
     align-items:center;
+
     gap:7px;
+
     margin-top:8px;
+
 }
+
 
 .qty-btn{
+
     width:25px;
+
     height:25px;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:50%;
+
 }
+
 
 .remove-item{
+
     border:0;
+
     background:none;
+
     color:#c0506d;
+
     font-size:12px;
+
     margin-top:5px;
+
 }
+
 
 .cart-footer{
-    padding:18px 20px;
-    border-top:1px solid var(--borda);
+
+    padding:
+        18px 20px;
+
+    border-top:
+        1px solid var(--borda);
+
     background:#fff;
+
 }
+
 
 .cart-total{
+
     display:flex;
+
     justify-content:space-between;
+
     font-size:18px;
+
     font-weight:bold;
+
     margin-bottom:16px;
+
 }
 
-/* =========================
+
+/* =========================================================
    PAGAMENTO
-========================= */
+========================================================= */
 
 .payment-box{
+
     background:#faf5f7;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     border-radius:14px;
+
     padding:15px;
+
     margin-bottom:15px;
+
 }
+
 
 .payment-title{
+
     font-size:12px;
+
     text-transform:uppercase;
+
     letter-spacing:1px;
+
     font-weight:bold;
+
     color:var(--vinho);
+
     margin-bottom:9px;
+
 }
+
 
 .payment-box select{
+
     width:100%;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:10px;
+
     padding:12px;
+
     outline:none;
+
     font-size:14px;
+
 }
+
 
 .payment-box select:focus{
+
     border-color:var(--rosa);
+
 }
+
 
 .change-field{
+
     display:none;
+
     margin-top:10px;
+
 }
+
 
 .change-field.show{
+
     display:block;
+
 }
+
 
 .change-field label{
+
     display:block;
+
     font-size:12px;
+
     font-weight:bold;
+
     margin-bottom:6px;
+
 }
+
 
 .change-field input{
+
     width:100%;
-    border:1px solid var(--borda);
+
+    border:
+        1px solid var(--borda);
+
     background:#fff;
+
     border-radius:10px;
+
     padding:12px;
+
     outline:none;
+
     font-size:14px;
+
 }
+
 
 .change-field input:focus{
+
     border-color:var(--rosa);
+
 }
+
 
 .payment-help{
+
     font-size:11px;
+
     color:var(--cinza);
+
     margin-top:7px;
+
     line-height:1.4;
+
 }
+
 
 .checkout-btn{
+
     width:100%;
+
     border:0;
+
     background:#25d366;
+
     color:#fff;
+
     border-radius:28px;
+
     padding:15px;
+
     font-weight:bold;
+
     font-size:14px;
+
 }
+
 
 .checkout-btn:hover{
+
     background:#1ebe5d;
+
 }
 
-/* =========================
+
+/* =========================================================
    TOAST
-========================= */
+========================================================= */
 
 .toast{
+
     position:fixed;
+
     bottom:25px;
+
     left:50%;
-    transform:translate(-50%,100px);
+
+    transform:
+        translate(-50%,100px);
+
     background:#231c1f;
+
     color:#fff;
-    padding:13px 20px;
+
+    padding:
+        13px 20px;
+
     border-radius:30px;
+
     z-index:6000;
+
     font-size:13px;
+
     opacity:0;
+
     transition:.3s;
+
 }
+
 
 .toast.show{
-    transform:translate(-50%,0);
+
+    transform:
+        translate(-50%,0);
+
     opacity:1;
+
 }
 
-/* =========================
+
+/* =========================================================
    FOOTER
-========================= */
+========================================================= */
 
 footer{
+
     background:#211b1e;
+
     color:#fff;
+
     margin-top:30px;
+
 }
+
 
 .footer-inner{
+
     max-width:1250px;
+
     margin:auto;
-    padding:45px 22px;
+
+    padding:
+        45px 22px;
+
     display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
+
+    grid-template-columns:
+        1.5fr 1fr 1fr;
+
     gap:35px;
+
 }
+
 
 .footer-logo img{
+
     width:100px;
+
     height:50px;
+
     object-fit:contain;
-    filter:brightness(0) invert(1);
+
+    filter:
+        brightness(0) invert(1);
+
     margin-bottom:15px;
+
 }
 
+
 .footer-col h3{
+
     font-family:Georgia,serif;
+
     margin-bottom:14px;
+
 }
+
 
 .footer-col p,
 .footer-col a{
+
     color:#cfc5c9;
+
     text-decoration:none;
+
     font-size:13px;
+
     line-height:1.8;
+
     display:block;
+
 }
+
 
 .footer-col a:hover{
+
     color:#fff;
+
 }
+
 
 .footer-bottom{
-    border-top:1px solid rgba(255,255,255,.1);
+
+    border-top:
+        1px solid rgba(255,255,255,.1);
+
     text-align:center;
+
     padding:17px;
+
     color:#aaa;
+
     font-size:11px;
+
 }
 
-/* =========================
+
+/* =========================================================
    RESPONSIVO
-========================= */
+========================================================= */
 
 @media(max-width:1000px){
 
     .products{
-        grid-template-columns:repeat(3,1fr);
+
+        grid-template-columns:
+            repeat(3,1fr);
+
     }
 
     .menu{
+
         gap:17px;
+
     }
+
 }
+
 
 @media(max-width:760px){
 
     .nav{
+
         height:68px;
-        padding:0 15px;
+
+        padding:
+            0 15px;
+
     }
 
     .brand img{
+
         width:72px;
+
         height:42px;
+
     }
 
     .menu{
+
         display:none;
+
     }
 
     .hero{
-        padding:20px 14px;
+
+        padding:
+            20px 14px;
+
     }
 
     .hero-box{
+
         grid-template-columns:1fr;
+
         min-height:auto;
+
     }
 
     .hero-content{
-        padding:45px 28px;
+
+        padding:
+            45px 28px;
+
     }
 
     .hero-art{
-        min-height:280px;
+
+        min-height:390px;
+
     }
 
-    .hero-circle{
-        width:220px;
-        height:220px;
-    }
+    .hero-model{
 
-    .hero-circle strong{
-        font-size:32px;
+        min-height:390px;
+
     }
 
     .section{
-        padding:45px 14px;
+
+        padding:
+            45px 14px;
+
     }
 
     .products{
-        grid-template-columns:repeat(2,1fr);
+
+        grid-template-columns:
+            repeat(2,1fr);
+
         gap:12px;
+
     }
 
     .product-image{
+
         height:220px;
+
     }
 
     .product-info{
+
         padding:13px;
+
     }
 
     .product-name{
+
         font-size:16px;
+
     }
 
     .product-price{
+
         font-size:15px;
+
     }
 
     .product-btn{
-        padding:10px 7px;
+
+        padding:
+            10px 7px;
+
         font-size:12px;
+
     }
 
     .contact-grid{
+
         grid-template-columns:1fr;
+
     }
 
     .footer-inner{
+
         grid-template-columns:1fr;
+
         gap:25px;
+
     }
 
     .product-modal{
+
         grid-template-columns:1fr;
+
         max-height:94vh;
+
     }
 
     .modal-image{
+
         min-height:280px;
+
         height:280px;
+
     }
 
     .modal-image img{
+
         min-height:280px;
+
     }
 
     .modal-content{
+
         padding:28px;
+
     }
 
     .modal-content h2{
+
         font-size:28px;
+
     }
+
 }
+
 
 @media(max-width:430px){
 
     .products{
+
         gap:9px;
+
     }
 
     .product-image{
+
         height:190px;
-        font-size:48px;
+
     }
 
     .hero h1{
+
         font-size:43px;
+
     }
 
     .categories{
+
         justify-content:flex-start;
+
         overflow-x:auto;
+
         flex-wrap:nowrap;
+
         padding-bottom:5px;
+
     }
 
     .category-btn{
+
         white-space:nowrap;
+
     }
+
 }
+
 </style>
+
 </head>
 
 <body>
 
-<!-- =========================
+
+<!-- =====================================================
      TOPO
-========================= -->
+===================================================== -->
 
 <div class="topbar">
-    ✨ NOVA COLEÇÃO AMORA BOUTIQUE • CONSULTE DISPONIBILIDADE E ENTREGA
+
+    ✨ NOVA COLEÇÃO AMORA BOUTIQUE
+    • CONSULTE DISPONIBILIDADE E ENTREGA
+
 </div>
 
-<!-- =========================
+
+<!-- =====================================================
      HEADER
-========================= -->
+===================================================== -->
 
 <header>
+
     <nav class="nav">
 
-        <a href="#inicio" class="brand">
-            <img src="logo.jpeg" alt="Amora Boutique">
+        <a
+            href="#inicio"
+            class="brand"
+        >
+
+            <img
+                src="logo.jpeg"
+                alt="Amora Boutique"
+            >
+
         </a>
 
+
         <div class="menu">
-            <a href="#inicio">Início</a>
-            <a href="#colecao">Coleção</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#contato">Contato</a>
+
+            <a href="#inicio">
+                Início
+            </a>
+
+            <a href="#colecao">
+                Coleção
+            </a>
+
+            <a href="#sobre">
+                Sobre nós
+            </a>
+
+            <a href="#contato">
+                Contato
+            </a>
+
         </div>
+
 
         <div class="actions">
 
-            <button class="icon-btn" onclick="focusSearch()" aria-label="Buscar">
+            <button
+                class="icon-btn"
+                onclick="focusSearch()"
+                aria-label="Buscar"
+            >
+
                 🔍
+
             </button>
 
-            <button class="icon-btn" onclick="openCart()" aria-label="Carrinho">
+
+            <button
+                class="icon-btn"
+                onclick="openCart()"
+                aria-label="Carrinho"
+            >
+
                 🛍️
-                <span class="cart-count" id="cartCount">0</span>
+
+                <span
+                    class="cart-count"
+                    id="cartCount"
+                >
+                    0
+                </span>
+
             </button>
 
         </div>
 
     </nav>
+
 </header>
 
-<!-- =========================
+
+<!-- =====================================================
      HERO
-========================= -->
+===================================================== -->
 
 <main>
 
-<section class="hero" id="inicio">
+<section
+    class="hero"
+    id="inicio"
+>
 
     <div class="hero-box">
+
 
         <div class="hero-content">
 
             <div class="hero-small">
+
                 Amora Boutique
+
             </div>
 
+
             <h1>
-                Vista sua<br>
+
+                Vista sua
+                <br>
                 essência.
+
             </h1>
 
+
             <p>
-                Moda feminina pensada para valorizar sua personalidade,
-                seu estilo e todos os momentos que fazem parte da sua história.
+
+                Moda feminina pensada para valorizar
+                sua personalidade, seu estilo e todos
+                os momentos que fazem parte da sua história.
+
             </p>
 
+
             <div>
-                <a href="#colecao" class="btn">
+
+                <a
+                    href="#colecao"
+                    class="btn"
+                >
+
                     VER COLEÇÃO
+
                 </a>
+
             </div>
 
         </div>
 
+
+        <!-- IMAGEM PRINCIPAL -->
+
         <div class="hero-art">
 
-            <div class="hero-circle">
-
-                <span>
-                    Moda feminina
-                </span>
-
-                <strong>
-                    AMORA
-                </strong>
-
-            </div>
+            <img
+                src="https://i.ibb.co/8nFkBwsw/images.jpg"
+                alt="Amora Boutique - Moda feminina"
+                class="hero-model"
+            >
 
         </div>
 
@@ -1196,11 +2141,16 @@ footer{
 
 </section>
 
-<!-- =========================
-     COLEÇÃO
-========================= -->
 
-<section class="section" id="colecao">
+<!-- =====================================================
+     COLEÇÃO
+===================================================== -->
+
+<section
+    class="section"
+    id="colecao"
+>
+
 
     <div class="section-title">
 
@@ -1214,45 +2164,65 @@ footer{
 
     </div>
 
+
     <div class="categories">
 
-        <button class="category-btn active"
-                onclick="filterCategory('Todos',this)">
+        <button
+            class="category-btn active"
+            onclick="filterCategory('Todos',this)"
+        >
             Todos
         </button>
 
-        <button class="category-btn"
-                onclick="filterCategory('Vestidos',this)">
+
+        <button
+            class="category-btn"
+            onclick="filterCategory('Vestidos',this)"
+        >
             Vestidos
         </button>
 
-        <button class="category-btn"
-                onclick="filterCategory('Blusas',this)">
+
+        <button
+            class="category-btn"
+            onclick="filterCategory('Blusas',this)"
+        >
             Blusas
         </button>
 
-        <button class="category-btn"
-                onclick="filterCategory('Calças',this)">
+
+        <button
+            class="category-btn"
+            onclick="filterCategory('Calças',this)"
+        >
             Calças
         </button>
 
-        <button class="category-btn"
-                onclick="filterCategory('Conjuntos',this)">
+
+        <button
+            class="category-btn"
+            onclick="filterCategory('Conjuntos',this)"
+        >
             Conjuntos
         </button>
 
-        <button class="category-btn"
-                onclick="filterCategory('Saias',this)">
+
+        <button
+            class="category-btn"
+            onclick="filterCategory('Saias',this)"
+        >
             Saias
         </button>
 
     </div>
+
 
     <div class="search-box">
 
         <span class="search-icon">
             🔍
         </span>
+
 
         <input
             type="text"
@@ -1263,21 +2233,36 @@ footer{
 
     </div>
 
-    <div class="products" id="products"></div>
 
-    <div class="no-results" id="noResults">
+    <div
+        class="products"
+        id="products"
+    ></div>
+
+
+    <div
+        class="no-results"
+        id="noResults"
+    >
+
         Nenhuma peça encontrada.
+
     </div>
 
 </section>
 
-<!-- =========================
-     SOBRE
-========================= -->
 
-<section class="about" id="sobre">
+<!-- =====================================================
+     SOBRE
+===================================================== -->
+
+<section
+    class="about"
+    id="sobre"
+>
 
     <div class="section">
+
 
         <div class="section-title">
 
@@ -1291,18 +2276,26 @@ footer{
 
         </div>
 
+
         <div class="about-inner">
 
             <p>
-                A Amora Boutique nasceu para trazer uma experiência
-                especial de moda feminina, unindo peças bonitas,
-                atuais e versáteis para você se sentir ainda mais
-                confiante em cada ocasião.
+
+                A Amora Boutique nasceu para trazer
+                uma experiência especial de moda feminina,
+                unindo peças bonitas, atuais e versáteis
+                para você se sentir ainda mais confiante
+                em cada ocasião.
+
             </p>
 
+
             <p>
-                Escolha sua peça, consulte a disponibilidade e fale
-                diretamente conosco pelo WhatsApp para finalizar seu pedido.
+
+                Escolha sua peça, consulte a disponibilidade
+                e fale diretamente conosco pelo WhatsApp
+                para finalizar seu pedido.
+
             </p>
 
         </div>
@@ -1311,11 +2304,16 @@ footer{
 
 </section>
 
-<!-- =========================
-     CONTATO
-========================= -->
 
-<section class="section" id="contato">
+<!-- =====================================================
+     CONTATO
+===================================================== -->
+
+<section
+    class="section"
+    id="contato"
+>
+
 
     <div class="section-title">
 
@@ -1329,7 +2327,9 @@ footer{
 
     </div>
 
+
     <div class="contact-grid">
+
 
         <div class="contact-card">
 
@@ -1347,6 +2347,7 @@ footer{
 
         </div>
 
+
         <div class="contact-card">
 
             <div class="icon">
@@ -1362,6 +2363,7 @@ footer{
             </p>
 
         </div>
+
 
         <div class="contact-card">
 
@@ -1385,78 +2387,133 @@ footer{
 
 </main>
 
-<!-- =========================
-     MODAL PRODUTO
-========================= -->
 
-<div class="modal-overlay" id="productModal">
+<!-- =====================================================
+     MODAL DO PRODUTO
+===================================================== -->
+
+<div
+    class="modal-overlay"
+    id="productModal"
+>
+
 
     <div class="product-modal">
 
-        <button class="close-modal"
-                onclick="closeProductModal()">
+
+        <button
+            class="close-modal"
+            onclick="closeProductModal()"
+        >
             ×
         </button>
 
-        <div class="modal-image" id="modalImage">
-            👗
+
+        <div
+            class="modal-image"
+            id="modalImage"
+        >
+
+            <img
+                src="https://i.ibb.co/8nFkBwsw/images.jpg"
+                alt="Produto Amora Boutique"
+            >
+
         </div>
+
 
         <div class="modal-content">
 
-            <div class="modal-category" id="modalCategory">
+
+            <div
+                class="modal-category"
+                id="modalCategory"
+            >
                 Vestidos
             </div>
+
 
             <h2 id="modalName">
                 Produto
             </h2>
 
-            <div class="modal-price" id="modalPrice">
+
+            <div
+                class="modal-price"
+                id="modalPrice"
+            >
                 R$ 0,00
             </div>
 
+
             <p class="modal-description">
-                Consulte disponibilidade, cores e detalhes
-                desta peça diretamente pelo WhatsApp.
+
+                Consulte disponibilidade,
+                cores e detalhes desta peça
+                diretamente pelo WhatsApp.
+
             </p>
 
+
             <div class="size-title">
+
                 Escolha o tamanho
+
             </div>
+
 
             <div class="sizes">
 
-                <button class="size-btn"
-                        onclick="selectSize(this)">
+
+                <button
+                    class="size-btn"
+                    onclick="selectSize(this)"
+                >
                     PP
                 </button>
 
-                <button class="size-btn"
-                        onclick="selectSize(this)">
+
+                <button
+                    class="size-btn"
+                    onclick="selectSize(this)"
+                >
                     P
                 </button>
 
-                <button class="size-btn active"
-                        onclick="selectSize(this)">
+
+                <button
+                    class="size-btn active"
+                    onclick="selectSize(this)"
+                >
                     M
                 </button>
 
-                <button class="size-btn"
-                        onclick="selectSize(this)">
+
+                <button
+                    class="size-btn"
+                    onclick="selectSize(this)"
+                >
                     G
                 </button>
 
-                <button class="size-btn"
-                        onclick="selectSize(this)">
+
+                <button
+                    class="size-btn"
+                    onclick="selectSize(this)"
+                >
                     GG
                 </button>
 
             </div>
 
-            <button class="add-cart"
-                    onclick="addCurrentProductToCart()">
+
+            <button
+                class="add-cart"
+                onclick="addCurrentProductToCart()"
+            >
+
                 ADICIONAR AO CARRINHO
+
             </button>
 
         </div>
@@ -1465,13 +2522,19 @@ footer{
 
 </div>
 
-<!-- =========================
-     CARRINHO
-========================= -->
 
-<div class="cart-overlay" id="cartOverlay">
+<!-- =====================================================
+     CARRINHO
+===================================================== -->
+
+<div
+    class="cart-overlay"
+    id="cartOverlay"
+>
+
 
     <div class="cart-drawer">
+
 
         <div class="cart-header">
 
@@ -1479,22 +2542,33 @@ footer{
                 Meu carrinho
             </h2>
 
-            <button class="close-cart"
-                    onclick="closeCart()">
+
+            <button
+                class="close-cart"
+                onclick="closeCart()"
+            >
                 ×
             </button>
 
         </div>
 
-        <div class="cart-items" id="cartItems">
+
+        <div
+            class="cart-items"
+            id="cartItems"
+        >
 
             <div class="empty-cart">
+
                 Seu carrinho está vazio.
+
             </div>
 
         </div>
 
+
         <div class="cart-footer">
+
 
             <div class="cart-total">
 
@@ -1508,46 +2582,73 @@ footer{
 
             </div>
 
-            <!-- =========================
-                 FORMA DE PAGAMENTO
-            ========================= -->
+
+            <!-- PAGAMENTO -->
 
             <div class="payment-box">
 
+
                 <div class="payment-title">
+
                     Forma de pagamento
+
                 </div>
 
-                <select id="paymentMethod"
-                        onchange="toggleChangeField()">
+
+                <select
+                    id="paymentMethod"
+                    onchange="toggleChangeField()"
+                >
 
                     <option value="">
+
                         Selecione uma opção
+
                     </option>
+
 
                     <option value="PIX">
+
                         💠 PIX
+
                     </option>
+
 
                     <option value="Cartão">
+
                         💳 Cartão
+
                     </option>
+
 
                     <option value="Cartão na entrega">
+
                         📱 Cartão na entrega
+
                     </option>
 
+
                     <option value="Dinheiro">
+
                         💵 Dinheiro
+
                     </option>
 
                 </select>
 
-                <div class="change-field" id="changeField">
+
+                <div
+                    class="change-field"
+                    id="changeField"
+                >
+
 
                     <label for="changeFor">
+
                         Troco para quanto?
+
                     </label>
+
 
                     <input
                         type="text"
@@ -1556,16 +2657,23 @@ footer{
                         inputmode="decimal"
                     >
 
+
                     <div class="payment-help">
-                        Se não precisar de troco, deixe este campo vazio.
+
+                        Se não precisar de troco,
+                        deixe este campo vazio.
+
                     </div>
 
                 </div>
 
             </div>
 
-            <button class="checkout-btn"
-                    onclick="checkoutWhatsApp()">
+
+            <button
+                class="checkout-btn"
+                onclick="checkoutWhatsApp()"
+            >
 
                 📲 FINALIZAR PELO WHATSAPP
 
@@ -1577,49 +2685,72 @@ footer{
 
 </div>
 
-<!-- =========================
+
+<!-- =====================================================
      TOAST
-========================= -->
+===================================================== -->
 
-<div class="toast" id="toast"></div>
+<div
+    class="toast"
+    id="toast"
+></div>
 
-<!-- =========================
+
+<!-- =====================================================
      FOOTER
-========================= -->
+===================================================== -->
 
 <footer>
 
+
     <div class="footer-inner">
+
 
         <div class="footer-col">
 
+
             <div class="footer-logo">
-                <img src="logo.jpeg" alt="Amora Boutique">
+
+                <img
+                    src="logo.jpeg"
+                    alt="Amora Boutique"
+                >
+
             </div>
 
+
             <p>
-                Moda feminina para você vestir sua essência.
+
+                Moda feminina para você
+                vestir sua essência.
+
             </p>
 
         </div>
 
+
         <div class="footer-col">
+
 
             <h3>
                 Navegação
             </h3>
 
+
             <a href="#inicio">
                 Início
             </a>
+
 
             <a href="#colecao">
                 Coleção
             </a>
 
+
             <a href="#sobre">
                 Sobre nós
             </a>
+
 
             <a href="#contato">
                 Contato
@@ -1627,182 +2758,280 @@ footer{
 
         </div>
 
+
         <div class="footer-col">
+
 
             <h3>
                 Atendimento
             </h3>
 
-            <a href="https://wa.me/5511978237198"
-               target="_blank">
+
+            <a
+                href="https://wa.me/5511978237198"
+                target="_blank"
+            >
                 WhatsApp
             </a>
 
+
             <p>
-                Consulte disponibilidade e entrega.
+
+                Consulte disponibilidade
+                e entrega.
+
             </p>
 
         </div>
 
     </div>
 
+
     <div class="footer-bottom">
-        © 2026 Amora Boutique. Todos os direitos reservados.
+
+        © 2026 Amora Boutique.
+        Todos os direitos reservados.
+
     </div>
 
 </footer>
 
+
 <script>
 
-/* ==========================================
+/* =========================================================
    CONFIGURAÇÕES
-========================================== */
+========================================================= */
 
-const WHATSAPP = "5511978237198";
+const WHATSAPP =
+    "5511978237198";
 
-let currentCategory = "Todos";
-let currentProduct = null;
-let selectedSize = "M";
 
-let cart = [];
+const IMAGE_PROVISORIA =
+    "https://i.ibb.co/8nFkBwsw/images.jpg";
 
-/* ==========================================
+
+let currentCategory =
+    "Todos";
+
+
+let currentProduct =
+    null;
+
+
+let selectedSize =
+    "M";
+
+
+let cart =
+    [];
+
+
+/* =========================================================
    PRODUTOS
-========================================== */
+=========================================================
+
+   QUANDO VOCÊ TIVER AS FOTOS REAIS:
+
+   Basta alterar SOMENTE o campo image.
+
+   Exemplo:
+
+   image:"imagens/vestido-amora.jpg"
+
+========================================================= */
 
 const products = [
 
+
     {
         id:1,
+
         name:"Vestido Amora",
+
         price:89.90,
+
         category:"Vestidos",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:2,
+
         name:"Vestido Elegance",
+
         price:109.90,
+
         category:"Vestidos",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:3,
+
         name:"Blusa Charm",
+
         price:59.90,
+
         category:"Blusas",
-        emoji:"👚",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:4,
+
         name:"Blusa Delicada",
+
         price:69.90,
+
         category:"Blusas",
-        emoji:"👚",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:5,
+
         name:"Calça Wide Leg",
+
         price:119.90,
+
         category:"Calças",
-        emoji:"👖",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:6,
+
         name:"Calça Mom",
+
         price:99.90,
+
         category:"Calças",
-        emoji:"👖",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:7,
+
         name:"Conjunto Amora",
+
         price:129.90,
+
         category:"Conjuntos",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:8,
+
         name:"Conjunto Elegance",
+
         price:149.90,
+
         category:"Conjuntos",
-        emoji:"👚",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:9,
+
         name:"Saia Midi",
+
         price:79.90,
+
         category:"Saias",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:10,
+
         name:"Saia Plissada",
+
         price:89.90,
+
         category:"Saias",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:11,
+
         name:"Vestido Romance",
+
         price:119.90,
+
         category:"Vestidos",
-        emoji:"👗",
-        image:""
+
+        image:IMAGE_PROVISORIA
     },
+
 
     {
         id:12,
+
         name:"Blusa Essencial",
+
         price:54.90,
+
         category:"Blusas",
-        emoji:"👚",
-        image:""
+
+        image:IMAGE_PROVISORIA
     }
 
 ];
 
-/* ==========================================
+
+/* =========================================================
    FORMATAÇÃO
-========================================== */
+========================================================= */
 
 function money(value){
 
-    return value.toLocaleString("pt-BR",{
-        style:"currency",
-        currency:"BRL"
-    });
+    return value.toLocaleString(
+        "pt-BR",
+        {
+            style:"currency",
+            currency:"BRL"
+        }
+    );
 
 }
 
-/* ==========================================
+
+/* =========================================================
    RENDER PRODUTOS
-========================================== */
+========================================================= */
 
 function renderProducts(){
 
-    const container = document.getElementById("products");
-    const noResults = document.getElementById("noResults");
+    const container =
+        document.getElementById("products");
+
+
+    const noResults =
+        document.getElementById("noResults");
+
 
     const search =
         document
@@ -1811,82 +3040,140 @@ function renderProducts(){
         .toLowerCase()
         .trim();
 
-    let filtered = products.filter(product => {
 
-        const categoryOk =
-            currentCategory === "Todos" ||
-            product.category === currentCategory;
+    const filtered =
+        products.filter(product => {
 
-        const searchOk =
-            product.name.toLowerCase().includes(search) ||
-            product.category.toLowerCase().includes(search);
 
-        return categoryOk && searchOk;
+            const categoryOk =
 
-    });
+                currentCategory === "Todos" ||
+
+                product.category ===
+                currentCategory;
+
+
+            const searchOk =
+
+                product.name
+                .toLowerCase()
+                .includes(search)
+
+                ||
+
+                product.category
+                .toLowerCase()
+                .includes(search);
+
+
+            return categoryOk &&
+                   searchOk;
+
+        });
+
 
     container.innerHTML = "";
 
+
     if(filtered.length === 0){
 
-        noResults.style.display = "block";
+        noResults.style.display =
+            "block";
+
         return;
 
     }
 
-    noResults.style.display = "none";
+
+    noResults.style.display =
+        "none";
+
 
     filtered.forEach(product => {
 
+
         const isFavorite =
-            localStorage.getItem("favorite_"+product.id) === "true";
 
-        const card = document.createElement("div");
+            localStorage.getItem(
+                "favorite_" + product.id
+            ) === "true";
 
-        card.className = "product";
 
-        let imageContent = product.emoji;
+        const card =
+            document.createElement("div");
 
-        if(product.image){
 
-            imageContent =
-                `<img src="${product.image}" alt="${product.name}">`;
+        card.className =
+            "product";
 
-        }
 
         card.innerHTML = `
 
             <div class="product-image">
 
-                ${imageContent}
+                <img
+                    src="${product.image}"
+                    alt="${product.name}"
+                    loading="lazy"
+                >
 
                 <button
-                    class="favorite ${isFavorite ? "active" : ""}"
-                    onclick="toggleFavorite(event,${product.id})">
+                    class="favorite ${
+                        isFavorite
+                        ? "active"
+                        : ""
+                    }"
+                    onclick="
+                        toggleFavorite(
+                            event,
+                            ${product.id}
+                        )
+                    "
+                >
 
-                    ${isFavorite ? "♥" : "♡"}
+                    ${
+                        isFavorite
+                        ? "♥"
+                        : "♡"
+                    }
 
                 </button>
 
             </div>
 
+
             <div class="product-info">
 
+
                 <div class="product-category">
+
                     ${product.category}
+
                 </div>
+
 
                 <div class="product-name">
+
                     ${product.name}
+
                 </div>
 
+
                 <div class="product-price">
+
                     ${money(product.price)}
+
                 </div>
+
 
                 <button
                     class="product-btn"
-                    onclick="openProductModal(${product.id})">
+                    onclick="
+                        openProductModal(
+                            ${product.id}
+                        )
+                    "
+                >
 
                     VER PRODUTO
 
@@ -1896,33 +3183,45 @@ function renderProducts(){
 
         `;
 
+
         container.appendChild(card);
 
     });
 
 }
 
-/* ==========================================
-   FILTRO CATEGORIA
-========================================== */
 
-function filterCategory(category, button){
+/* =========================================================
+   CATEGORIAS
+========================================================= */
 
-    currentCategory = category;
+function filterCategory(
+    category,
+    button
+){
+
+    currentCategory =
+        category;
+
 
     document
         .querySelectorAll(".category-btn")
-        .forEach(btn => btn.classList.remove("active"));
+        .forEach(btn =>
+            btn.classList.remove("active")
+        );
+
 
     button.classList.add("active");
+
 
     renderProducts();
 
 }
 
-/* ==========================================
+
+/* =========================================================
    BUSCA
-========================================== */
+========================================================= */
 
 function searchProducts(){
 
@@ -1930,11 +3229,13 @@ function searchProducts(){
 
 }
 
+
 function focusSearch(){
 
     document
         .getElementById("searchInput")
         .focus();
+
 
     document
         .getElementById("colecao")
@@ -1944,78 +3245,116 @@ function focusSearch(){
 
 }
 
-/* ==========================================
-   FAVORITOS
-========================================== */
 
-function toggleFavorite(event,id){
+/* =========================================================
+   FAVORITOS
+========================================================= */
+
+function toggleFavorite(
+    event,
+    id
+){
 
     event.stopPropagation();
 
-    const key = "favorite_"+id;
+
+    const key =
+        "favorite_" + id;
+
 
     const current =
-        localStorage.getItem(key) === "true";
+
+        localStorage.getItem(key)
+        === "true";
+
 
     localStorage.setItem(
         key,
         (!current).toString()
     );
 
+
     renderProducts();
 
 }
 
-/* ==========================================
+
+/* =========================================================
    MODAL
-========================================== */
+========================================================= */
 
 function openProductModal(id){
 
     const product =
-        products.find(item => item.id === id);
+        products.find(
+            item => item.id === id
+        );
 
-    if(!product) return;
 
-    currentProduct = product;
+    if(!product)
+        return;
 
-    selectedSize = "M";
 
-    document.getElementById("modalName").textContent =
+    currentProduct =
+        product;
+
+
+    selectedSize =
+        "M";
+
+
+    document
+        .getElementById("modalName")
+        .textContent =
         product.name;
 
-    document.getElementById("modalCategory").textContent =
+
+    document
+        .getElementById("modalCategory")
+        .textContent =
         product.category;
 
-    document.getElementById("modalPrice").textContent =
+
+    document
+        .getElementById("modalPrice")
+        .textContent =
         money(product.price);
 
-    const modalImage =
-        document.getElementById("modalImage");
 
-    if(product.image){
+    document
+        .getElementById("modalImage")
+        .innerHTML = `
 
-        modalImage.innerHTML =
-            `<img src="${product.image}" alt="${product.name}">`;
+            <img
+                src="${product.image}"
+                alt="${product.name}"
+            >
 
-    }else{
+    `;
 
-        modalImage.innerHTML =
-            product.emoji;
-
-    }
 
     document
         .querySelectorAll(".size-btn")
         .forEach(btn => {
 
-            btn.classList.remove("active");
+            btn.classList.remove(
+                "active"
+            );
 
-            if(btn.textContent.trim() === "M"){
-                btn.classList.add("active");
+
+            if(
+                btn.textContent.trim()
+                === "M"
+            ){
+
+                btn.classList.add(
+                    "active"
+                );
+
             }
 
         });
+
 
     document
         .getElementById("productModal")
@@ -2023,42 +3362,64 @@ function openProductModal(id){
 
 }
 
+
 function closeProductModal(){
 
     document
         .getElementById("productModal")
-        .classList.remove("show");
+        .classList.remove(
+            "show"
+        );
 
 }
+
 
 function selectSize(button){
 
     document
         .querySelectorAll(".size-btn")
         .forEach(btn =>
-            btn.classList.remove("active")
+            btn.classList.remove(
+                "active"
+            )
         );
 
-    button.classList.add("active");
+
+    button.classList.add(
+        "active"
+    );
+
 
     selectedSize =
         button.textContent.trim();
 
 }
 
-/* ==========================================
-   CARRINHO
-========================================== */
+
+/* =========================================================
+   ADICIONAR AO CARRINHO
+========================================================= */
 
 function addCurrentProductToCart(){
 
-    if(!currentProduct) return;
+    if(!currentProduct)
+        return;
+
 
     const existing =
+
         cart.find(item =>
-            item.id === currentProduct.id &&
-            item.size === selectedSize
+
+            item.id ===
+            currentProduct.id
+
+            &&
+
+            item.size ===
+            selectedSize
+
         );
+
 
     if(existing){
 
@@ -2068,166 +3429,295 @@ function addCurrentProductToCart(){
 
         cart.push({
 
-            id:currentProduct.id,
-            name:currentProduct.name,
-            price:currentProduct.price,
-            category:currentProduct.category,
-            emoji:currentProduct.emoji,
-            image:currentProduct.image,
-            size:selectedSize,
-            quantity:1
+            id:
+                currentProduct.id,
+
+            name:
+                currentProduct.name,
+
+            price:
+                currentProduct.price,
+
+            category:
+                currentProduct.category,
+
+            image:
+                currentProduct.image,
+
+            size:
+                selectedSize,
+
+            quantity:
+                1
 
         });
 
     }
 
+
     updateCart();
+
 
     closeProductModal();
 
-    showToast("Peça adicionada ao carrinho!");
+
+    showToast(
+        "Peça adicionada ao carrinho!"
+    );
+
 
     openCart();
 
 }
 
+
+/* =========================================================
+   ATUALIZAR CARRINHO
+========================================================= */
+
 function updateCart(){
 
     const container =
-        document.getElementById("cartItems");
+        document.getElementById(
+            "cartItems"
+        );
+
 
     const count =
+
         cart.reduce(
             (total,item) =>
-                total + item.quantity,
+                total +
+                item.quantity,
             0
         );
 
-    document.getElementById("cartCount")
-        .textContent = count;
+
+    document
+        .getElementById("cartCount")
+        .textContent =
+        count;
+
 
     if(cart.length === 0){
 
         container.innerHTML = `
+
             <div class="empty-cart">
+
                 Seu carrinho está vazio.
+
             </div>
+
         `;
 
-        document.getElementById("cartTotal")
-            .textContent = money(0);
+
+        document
+            .getElementById("cartTotal")
+            .textContent =
+            money(0);
+
 
         return;
 
     }
 
-    container.innerHTML = "";
 
-    let total = 0;
+    container.innerHTML =
+        "";
 
-    cart.forEach((item,index) => {
 
-        total +=
-            item.price * item.quantity;
+    let total =
+        0;
 
-        let image =
-            item.image
-                ? `<img src="${item.image}" alt="${item.name}">`
-                : item.emoji;
 
-        const div =
-            document.createElement("div");
+    cart.forEach(
+        (item,index) => {
 
-        div.className = "cart-item";
 
-        div.innerHTML = `
+            total +=
 
-            <div class="cart-thumb">
-                ${image}
-            </div>
+                item.price *
+                item.quantity;
 
-            <div>
 
-                <div class="cart-item-name">
-                    ${item.name}
+            const div =
+                document.createElement(
+                    "div"
+                );
+
+
+            div.className =
+                "cart-item";
+
+
+            div.innerHTML = `
+
+                <div class="cart-thumb">
+
+                    <img
+                        src="${item.image}"
+                        alt="${item.name}"
+                    >
+
                 </div>
 
-                <div class="cart-item-size">
-                    Tamanho: ${item.size}
-                </div>
 
-                <div class="cart-item-price">
-                    ${money(item.price)}
-                </div>
+                <div>
 
-                <div class="qty-controls">
+
+                    <div class="cart-item-name">
+
+                        ${item.name}
+
+                    </div>
+
+
+                    <div class="cart-item-size">
+
+                        Tamanho:
+                        ${item.size}
+
+                    </div>
+
+
+                    <div class="cart-item-price">
+
+                        ${money(item.price)}
+
+                    </div>
+
+
+                    <div class="qty-controls">
+
+
+                        <button
+                            class="qty-btn"
+                            onclick="
+                                changeQuantity(
+                                    ${index},
+                                    -1
+                                )
+                            "
+                        >
+
+                            −
+
+                        </button>
+
+
+                        <span>
+
+                            ${item.quantity}
+
+                        </span>
+
+
+                        <button
+                            class="qty-btn"
+                            onclick="
+                                changeQuantity(
+                                    ${index},
+                                    1
+                                )
+                            "
+                        >
+
+                            +
+
+                        </button>
+
+                    </div>
+
 
                     <button
-                        class="qty-btn"
-                        onclick="changeQuantity(${index},-1)">
-                        −
-                    </button>
+                        class="remove-item"
+                        onclick="
+                            removeCartItem(
+                                ${index}
+                            )
+                        "
+                    >
 
-                    <span>
-                        ${item.quantity}
-                    </span>
+                        Remover
 
-                    <button
-                        class="qty-btn"
-                        onclick="changeQuantity(${index},1)">
-                        +
                     </button>
 
                 </div>
 
-                <button
-                    class="remove-item"
-                    onclick="removeCartItem(${index})">
+            `;
 
-                    Remover
 
-                </button>
+            container.appendChild(
+                div
+            );
 
-            </div>
+        }
+    );
 
-        `;
 
-        container.appendChild(div);
-
-    });
-
-    document.getElementById("cartTotal")
-        .textContent = money(total);
+    document
+        .getElementById("cartTotal")
+        .textContent =
+        money(total);
 
 }
 
-function changeQuantity(index,change){
 
-    if(!cart[index]) return;
+/* =========================================================
+   QUANTIDADE
+========================================================= */
 
-    cart[index].quantity += change;
+function changeQuantity(
+    index,
+    change
+){
 
-    if(cart[index].quantity <= 0){
+    if(!cart[index])
+        return;
 
-        cart.splice(index,1);
+
+    cart[index].quantity +=
+        change;
+
+
+    if(
+        cart[index].quantity <= 0
+    ){
+
+        cart.splice(
+            index,
+            1
+        );
 
     }
 
+
     updateCart();
 
 }
+
+
+/* =========================================================
+   REMOVER
+========================================================= */
 
 function removeCartItem(index){
 
-    cart.splice(index,1);
+    cart.splice(
+        index,
+        1
+    );
+
 
     updateCart();
 
 }
 
-/* ==========================================
-   ABRIR / FECHAR CARRINHO
-========================================== */
+
+/* =========================================================
+   CARRINHO ABRIR / FECHAR
+========================================================= */
 
 function openCart(){
 
@@ -2237,6 +3727,7 @@ function openCart(){
 
 }
 
+
 function closeCart(){
 
     document
@@ -2245,70 +3736,117 @@ function closeCart(){
 
 }
 
-/* ==========================================
+
+/* =========================================================
    PAGAMENTO
-========================================== */
+========================================================= */
 
 function toggleChangeField(){
 
     const method =
-        document.getElementById("paymentMethod").value;
+
+        document
+        .getElementById(
+            "paymentMethod"
+        )
+        .value;
+
 
     const field =
-        document.getElementById("changeField");
+
+        document
+        .getElementById(
+            "changeField"
+        );
+
 
     if(method === "Dinheiro"){
 
-        field.classList.add("show");
+        field.classList.add(
+            "show"
+        );
 
     }else{
 
-        field.classList.remove("show");
+        field.classList.remove(
+            "show"
+        );
 
-        document.getElementById("changeFor")
-            .value = "";
+
+        document
+            .getElementById(
+                "changeFor"
+            )
+            .value =
+            "";
 
     }
 
 }
 
-/* ==========================================
-   CONVERTER VALOR BRASILEIRO
-========================================== */
+
+/* =========================================================
+   CONVERTER DINHEIRO
+========================================================= */
 
 function parseMoney(value){
 
-    if(!value) return 0;
+    if(!value)
+        return 0;
+
 
     value = value
         .toString()
-        .replace(/[R$\s]/g,"")
-        .replace(/\./g,"")
-        .replace(",", ".");
+        .replace(
+            /[R$\s]/g,
+            ""
+        )
+        .replace(
+            /\./g,
+            ""
+        )
+        .replace(
+            ",",
+            "."
+        );
+
 
     const number =
         parseFloat(value);
 
-    return isNaN(number) ? 0 : number;
+
+    return isNaN(number)
+        ? 0
+        : number;
 
 }
 
-/* ==========================================
-   CHECKOUT WHATSAPP
-========================================== */
+
+/* =========================================================
+   FINALIZAR PELO WHATSAPP
+========================================================= */
 
 function checkoutWhatsApp(){
 
     if(cart.length === 0){
 
-        showToast("Seu carrinho está vazio.");
+        showToast(
+            "Seu carrinho está vazio."
+        );
 
         return;
 
     }
 
+
     const payment =
-        document.getElementById("paymentMethod").value;
+
+        document
+        .getElementById(
+            "paymentMethod"
+        )
+        .value;
+
 
     if(!payment){
 
@@ -2316,40 +3854,64 @@ function checkoutWhatsApp(){
             "Escolha a forma de pagamento."
         );
 
+
         document
-            .getElementById("paymentMethod")
+            .getElementById(
+                "paymentMethod"
+            )
             .focus();
+
 
         return;
 
     }
 
-    let total = 0;
+
+    let total =
+        0;
+
 
     cart.forEach(item => {
 
         total +=
-            item.price * item.quantity;
+            item.price *
+            item.quantity;
 
     });
 
-    let changeFor = 0;
+
+    let changeFor =
+        0;
+
 
     if(payment === "Dinheiro"){
 
         const changeInput =
-            document.getElementById("changeFor").value.trim();
+
+            document
+            .getElementById(
+                "changeFor"
+            )
+            .value
+            .trim();
+
 
         if(changeInput){
 
             changeFor =
-                parseMoney(changeInput);
+                parseMoney(
+                    changeInput
+                );
 
-            if(changeFor < total){
+
+            if(
+                changeFor < total
+            ){
 
                 showToast(
                     "O valor do troco precisa ser maior ou igual ao total."
                 );
+
 
                 return;
 
@@ -2359,67 +3921,103 @@ function checkoutWhatsApp(){
 
     }
 
+
     let message =
+
         "🛍️ *NOVO PEDIDO - AMORA BOUTIQUE*%0A";
 
+
     message +=
+
         "━━━━━━━━━━━━━━━━━━%0A%0A";
 
+
     message +=
+
         "🛒 *ITENS DO PEDIDO*%0A%0A";
 
-    cart.forEach((item,index) => {
 
-        message +=
-            `${index + 1}. ${item.name}%0A`;
+    cart.forEach(
+        (item,index) => {
 
-        message +=
-            `   Tamanho: ${item.size}%0A`;
 
-        message +=
-            `   Quantidade: ${item.quantity}%0A`;
+            message +=
 
-        message +=
-            `   Valor: ${money(item.price * item.quantity)}%0A%0A`;
+                `${index + 1}. ${item.name}%0A`;
 
-    });
+
+            message +=
+
+                `   Tamanho: ${item.size}%0A`;
+
+
+            message +=
+
+                `   Quantidade: ${item.quantity}%0A`;
+
+
+            message +=
+
+                `   Valor: ${money(
+                    item.price *
+                    item.quantity
+                )}%0A%0A`;
+
+        }
+    );
+
 
     message +=
+
         "━━━━━━━━━━━━━━━━━━%0A";
 
-    message +=
-        `💰 *TOTAL: ${money(total)}*%0A%0A`;
 
     message +=
+
+        `💰 *TOTAL: ${money(total)}*%0A%0A`;
+
+
+    message +=
+
         `💳 *FORMA DE PAGAMENTO: ${payment}*%0A`;
+
 
     if(payment === "Dinheiro"){
 
         if(changeFor > 0){
 
             message +=
+
                 `💵 *TROCO PARA: ${money(changeFor)}*%0A`;
 
         }else{
 
             message +=
+
                 `💵 *TROCO: NÃO PRECISA*%0A`;
 
         }
 
     }
 
+
     message +=
+
         "%0A━━━━━━━━━━━━━━━━━━%0A";
 
+
     message +=
+
         "Olá! Gostaria de finalizar este pedido. 💕";
 
+
     const url =
+
         "https://wa.me/" +
         WHATSAPP +
         "?text=" +
         message;
+
 
     window.open(
         url,
@@ -2428,62 +4026,93 @@ function checkoutWhatsApp(){
 
 }
 
-/* ==========================================
+
+/* =========================================================
    TOAST
-========================================== */
+========================================================= */
 
 function showToast(message){
 
     const toast =
-        document.getElementById("toast");
+        document.getElementById(
+            "toast"
+        );
 
-    toast.textContent = message;
 
-    toast.classList.add("show");
+    toast.textContent =
+        message;
 
-    setTimeout(() => {
 
-        toast.classList.remove("show");
+    toast.classList.add(
+        "show"
+    );
 
-    },3000);
+
+    setTimeout(
+        () => {
+
+            toast.classList.remove(
+                "show"
+            );
+
+        },
+        3000
+    );
 
 }
 
-/* ==========================================
-   FECHAR MODAL CLICANDO FORA
-========================================== */
+
+/* =========================================================
+   FECHAR MODAL FORA
+========================================================= */
 
 document
-    .getElementById("productModal")
-    .addEventListener("click",function(event){
+    .getElementById(
+        "productModal"
+    )
+    .addEventListener(
+        "click",
+        function(event){
 
-        if(event.target === this){
+            if(
+                event.target === this
+            ){
 
-            closeProductModal();
+                closeProductModal();
+
+            }
 
         }
+    );
 
-    });
 
-/* ==========================================
-   FECHAR CARRINHO CLICANDO FORA
-========================================== */
+/* =========================================================
+   FECHAR CARRINHO FORA
+========================================================= */
 
 document
-    .getElementById("cartOverlay")
-    .addEventListener("click",function(event){
+    .getElementById(
+        "cartOverlay"
+    )
+    .addEventListener(
+        "click",
+        function(event){
 
-        if(event.target === this){
+            if(
+                event.target === this
+            ){
 
-            closeCart();
+                closeCart();
+
+            }
 
         }
+    );
 
-    });
 
-/* ==========================================
+/* =========================================================
    INICIALIZAÇÃO
-========================================== */
+========================================================= */
 
 renderProducts();
 
